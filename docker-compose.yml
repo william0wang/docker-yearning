@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  yearning:
+    image: william0wang/yearning:2.2.1
+    environment:
+      MYSQL_USER: yearning
+      MYSQL_PASSWORD: ukC2ZkcG_ZTeb
+      MYSQL_ADDR: mysql
+      MYSQL_DB: yearning
+    ports:
+      - 8000:8000
+
+# 默认账号：admin，默认密码：Yearning_admin

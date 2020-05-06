@@ -1,0 +1,14 @@
+[Unit]
+Description=yearning
+After=syslog.target network.target
+
+[Service]
+Type=forking
+PIDFile=/usr/local/Yearning-go/yearning.pid 
+WorkingDirectory=/usr/local/Yearning-go
+ExecStart=/usr/local/Yearning-go/Yearning -s
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
