@@ -8,6 +8,8 @@ services:
       MYSQL_PASSWORD: ukC2ZkcG_ZTeb
       MYSQL_ADDR: mysql
       MYSQL_DB: yearning
+    volumes:
+      - ./conf.toml:/opt/conf.toml
     ports:
       - 8000:8000
 
