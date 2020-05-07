@@ -6,4 +6,5 @@ Password = ""
 User = "root"
 
 [General]
+AdminUser = "admin"
 SecretKey = "dbcjqheupqjsuwsm"
